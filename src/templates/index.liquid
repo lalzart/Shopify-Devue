@@ -1,0 +1,4 @@
+
+{% for collection in collections  %}
+  <quick-buy _collection='{{ collection | json }}' _products='{{ collections[collection.handle].products | json }}'></quick-buy>
+{% endfor %}
